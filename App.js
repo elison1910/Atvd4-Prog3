@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, FlatList, Image, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-// Dados simulados das mensagens
+{/* Mensagens */}
 const messages = [
   {
     id: '1',
@@ -62,7 +62,7 @@ const messages = [
   },
 ];
 
-// Componente do item da lista de mensagens
+{/* Lista de Mensagens */}
 const MessageItem = ({ item }) => (
   <TouchableOpacity style={styles.messageItem}>
     <Image source={{ uri: item.avatar }} style={styles.avatar} />
@@ -77,7 +77,7 @@ const MessageItem = ({ item }) => (
   </TouchableOpacity>
 );
 
-// Componente da barra inferior
+{/* Parte Inferior da Tela */}
 const BottomTab = () => (
   <View style={styles.bottomTab}>
     <View style={styles.tabItem}>
@@ -99,7 +99,7 @@ const BottomTab = () => (
   </View>
 );
 
-// Tela principal com cabeçalho só texto
+{/* Tela de Mensagens */}
 export default function MessagesScreen() {
   return (
     <SafeAreaView style={styles.container}>
@@ -132,7 +132,7 @@ export default function MessagesScreen() {
   );
 }
 
-// Estilos
+{/* Estilos */}
 const styles = StyleSheet.create({
   container: {
     flex: 1,
